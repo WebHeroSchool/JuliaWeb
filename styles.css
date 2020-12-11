@@ -7,7 +7,7 @@
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px pt_serif; 
+  font: bold 24px/31px pt_serif, arial, Helvetica, Sans-serif; 
 }
 
 .logo__circle {
@@ -92,6 +92,10 @@
   width: 100%
 }
 
+.main-content {
+  padding-top: 100px;
+  width: 37%;
+}
 
 .main-content__title {
   font-family: 'PT Serif';
