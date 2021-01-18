@@ -319,18 +319,19 @@
       display: block;
       text-align: center;
       padding-top: 13px;
+      padding-left: 16px;
       font: 13.5px/18px ptserif, robotoblack, Arial, Helvetica, sans_serif; 
       margin-left: 79px;
       margin-top: 8px;
       height: 8px;
+      letter-spacing: 0.3px;
 
         }
 
   .main {
-      padding: 15% 65% 100px 0;
-      background-position: right 295px bottom -5px;
-      background-size: 39.5%;
-  }
+      padding: 15% 58% 100px 0;
+      background-position: right 222px bottom -3px;
+      background-size: 41.7%;
 }
 
 @media (max-width: 1024px) {
@@ -375,6 +376,7 @@
   .main {
     background-position: right 287px bottom -5px;
     background-size: 41%;
+    padding: 15% 41% 100px 0;
   }
 }
 
@@ -419,6 +421,7 @@
   .main-content {
     margin-left: 47px;
     margin-top: 188px;
+
   }
 
   .main__title {
@@ -447,7 +450,7 @@
 
   .container {
      max-width: 860px;
-     max-height: 900px;
+     //max-height: 900px;
      margin: auto;
      //overflow: hidden;
      padding: 0 3rem;
