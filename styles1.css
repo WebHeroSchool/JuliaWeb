@@ -1,6 +1,7 @@
   .wrapper {
     margin: auto;
     width: 80%;
+    
   }
 
   .logo {
@@ -301,7 +302,8 @@
 
   .main__title {
       margin: -40px 0 0px 1.38em;
-      font: bold 56px/64px ptserif;
+      font: bold 55px/64px ptserif;
+      letter-spacing: 0.7px;
       
   }
 
@@ -332,6 +334,8 @@
       padding: 15% 58% 100px 0;
       background-position: right 222px bottom -3px;
       background-size: 41.7%;
+            
+      
 }
 
 @media (max-width: 1024px) {
@@ -374,7 +378,9 @@
   }
 
   .main {
-    background-size: 43%;
+    background-size: 51%;
+    padding: 15% 41% 102px 0px;
+    background-position: right 44px bottom 0vw;
   }
 }
 
@@ -594,7 +600,6 @@
     margin-left: 76px;
     letter-spacing: 0.11px;
     width: 182px;
-    //border: 2px red dotted;
     top: 520px;
 }
 
@@ -608,7 +613,6 @@
 @media (max-width: 480px) {
 
   .main__title {
-    //display: center;
     font-size: 31px;
     line-height: 40px;
     padding-top: 166px;
@@ -621,12 +625,16 @@
     position: relative;
     background-size: 74.5vw;
     margin-right: 41px;
+    height: 100vh;
+    margin-bottom: 0;
+    //padding: 15% 58% 100px 0;
   }
 
   .main__button {
     margin: 0 0 0 75px;
     width: 174px;
     top: 490px;
+    padding-right: 18px
   }
 
   .main__subtitle {
