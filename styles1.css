@@ -603,20 +603,14 @@
     top: 520px;
 }
 
-  .wrapper {
-    height: 100vh;
-    border: 2px red dotted;
-  }
-}
-
-
+ 
 @media (max-width: 480px) {
 
   .main__title {
     font-size: 31px;
     line-height: 40px;
-    padding-top: 166px;
-    padding-left: 10px;
+    padding-top: 245px;
+    padding-left: 12px;
     letter-spacing: 1.3px;
     margin-bottom: 0;
   }
@@ -625,16 +619,16 @@
     position: relative;
     background-size: 74.5vw;
     margin-right: 41px;
-    height: 100vh;
-    margin-bottom: 0;
-    //padding: 15% 58% 100px 0;
+    height: 560px;
+    padding: 3px 0 0 0;
   }
 
   .main__button {
     margin: 0 0 0 75px;
     width: 174px;
-    top: 490px;
-    padding-right: 18px
+    top: 492px;
+    padding-right: 20px;
+    letter-spacing: 0.4px;
   }
 
   .main__subtitle {
