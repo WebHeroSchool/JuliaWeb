@@ -659,4 +659,38 @@
     display: none;
   }
 
+/*Elements to animate*/
+  
+.content__circle {
+  width: 450px;
+  height: 450px;
+  background-color: #cce6ff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 100px;
+  z-index: 4;
+  opacity: .3;
+
+  animation-name: black-circle;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+
+  @keyframes black-circle {
+  0% {
+    transform: translateX(-20px);
+  }
+  
+  50% {    
+  background-color: #f2e6ff;
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+  }
 }
