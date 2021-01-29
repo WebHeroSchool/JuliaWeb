@@ -1,54 +1,42 @@
   .wrapper {
     margin: auto;
     width: 80%;
-    overflow: hidden; /*for body*/
-    
   }
 
   .logo {
     position: relative;
     padding: 40px 0;
-    padding-left: 44px;
     font: bold 24px/31px ptserif, robotoblack, Arial, Helvetica, sans_serif;
   }
 
   .header {
-    display: flex;
     justify-content: space-between;
-   
-   }
-
+  }
 
   .menu {
     display: flex;
-    text-align: center;
     margin-top: 24px;
     position: absolute;
-    right: 9%;   
-
+    right: 9%;
+    padding-left: 71px;   
   }
 
-    li {
-      list-style-type: none;
-      display: inline-block; 
-    
-    }
+  li {
+    list-style-type: none;
+    display: inline-block; 
+  }
 
- 
-    
   .menu__item {
     position: relative;
     margin-right: 26px;
     font: 500 18px/21px robotoblack, Arial, Helvetica, ptserif, sans_serif;
     color: #000;
     text-decoration: none;
-   
   }
 
   .menu-item:last-child {
     padding-right: 0;
     margin-right: 0;
-    
   }
 
   .menu__item_active::after {
@@ -70,7 +58,7 @@
     height: 3px;
     background: #0056EC;
     opacity: 0;
-    transition: opacity .5s; width .5s;
+    transition: opacity .5s; 
   }
 
   .menu__item:hover {
@@ -78,12 +66,11 @@
   }
 
   .menu__item:hover:after, .menu__item_active:after {
-    opacity: 1;
-    width: 100%
+    width: 100%;
   }
 
   .main {
-    padding: 0 68% 500px 0;
+    padding: 0 68% 0 0;
     background: top right no-repeat url(img/mainimg.svg);
     background-size: 50% auto;
   }
@@ -101,7 +88,6 @@
     margin: 0 0 41px 0;
     width: 450px;
     font: 23px/27px robotoblack, Arial, Helvetica, ptserif, sans_serif;
-   
   }
 
   .main__button {
@@ -119,39 +105,34 @@
     opacity: .5;
   }
 
-/*Elements to animate*/
-  
-.content__circle {
-  width: 50%;
-  height: 85%;
-  background-color: #cce6ff;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 20px;
-  z-index: 4;
-  opacity: .3;
+  /*Animation*/
+  .content__circle {
+    width: 50%;
+    height: 85%;
+    background-color: #cce6ff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 4;
+    opacity: .3;
 
-  animation-name: circle;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
-}
+    animation: circle 5s ease-in-out alternate-reverse infinite;
+  }
 
 
   @keyframes circle {
-  0% {
-    transform: translateX(-20px);
-  }
-  
-  50% {    
-  background-color: #f2e6ff;
-  }
+    0% {
+      transform: translateX(5%);
+    }
+    
+    50% {    
+    background-color: #f2e6ff;
+    }
 
-  100% {
-    transform: translateX(800px);
-  }
+    100% {
+      transform: translateX(80%);
+    }
   }
 
 
@@ -181,8 +162,6 @@
   }
 
   .header {
-
-    /*font: bold 24px/25px robotoblack, Arial, Helvetica, ptserif, sans_serif;*/
     padding: 0 5em 0 0;
   }
 
@@ -197,9 +176,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    /*margin-bottom: 200px;*/
-   }
-
+  }
 
   .toggler {
     opacity: 0;
@@ -210,7 +187,6 @@
     text-align: center;
     margin-top: 6px;
     margin-left: 30px;
-
   }
 
 
@@ -220,13 +196,11 @@
     font: 500 18px/21px robotoblack, Arial, Helvetica, ptserif, sans_serif;
     color: #000;
     text-decoration: none;
-   
   }
 
   .menu-item:last-child {
     padding-right: 0;
     margin-right: 0;
-    
   }
 
   .menu__item_active::after {
@@ -248,7 +222,7 @@
     height: 3px;
     background: #0056EC;
     opacity: 0;
-    transition: opacity .5s; width .5s;
+    transition: opacity .5s; 
   }
 
   .menu__item:hover {
@@ -262,7 +236,6 @@
 
   .main {
     padding: 15% 65% 100px 0;
-    background: top right no-repeat url(img/mainimg.svg);
     background-position: right 65px bottom -1.7vw;
     background-size: 48.5%;
     height: 100%;
@@ -288,7 +261,6 @@
     margin: 0 0 40px 0;
     width: 440px;
     font: 22px/26px robotoblack, Arial, Helvetica, ptserif, sans_serif;
-    
   }
 
   .main__button {
@@ -303,12 +275,10 @@
     text-decoration: none;
     border-radius: 4px; 
     transition:opacity .5s;
-
   }
 }
 
 @media (max-width: 1367px) {
-
 
   .p1 {
     font: bold 27.5px/30px ptserif;
@@ -316,64 +286,60 @@
   }
  
   .logo__circle {
-      left: 76px;
-    }
+    left: 76px;
+  }
 
   .logo__circle_color_blue {
-       left: 84px;
+    left: 84px;
   }
 
   .menu {
-      right: 187px;
-    
+    right: 187px;
   }
 
   .menu__item {
-      font: 500 13.8px/19px ptserif, robotoblack, Arial, Helvetica, sans_serif;
-      letter-spacing: 0.2px;
+    font: 500 13.8px/19px ptserif, robotoblack, Arial, Helvetica, sans_serif;
+    letter-spacing: .2px;
   }
 
-  .menu-item:last-child {
-      position: absolute;
-      margin-right: 5px;
+  .menu-item: last-child {
+    position: absolute;
+    margin-right: 5px;
   }
 
   .main__title {
-      margin: -40px 0 0px 1.38em;
-      font: bold 55px/64px ptserif;
-      letter-spacing: 0.7px;
+    margin-left: 1.38em;
+    font: bold 55px/64px ptserif;
+    letter-spacing: .7px;
       
   }
 
   .main__subtitle {
-      margin: 2.4em 1em 2.2em 4.5em;
-      width: 350px;
-      font: 17.5px/23px robotoblack, Arial, Helvetica, ptserif, sans_serif;
-      letter-spacing: .3px;
+    margin: 2.4em 1em 2.2em 4.5em;
+    width: 350px;
+    font: 17.5px/23px robotoblack, Arial, Helvetica, ptserif, sans_serif;
+    letter-spacing: .3px;
   }
   
 
   .main__button {
-      //position: absolute;
-      top: 68%;
-      display: block;
-      text-align: center;
-      padding-top: 13px;
-      padding-left: 19px;
-      width: 155px;
-      font: 13.1px/17px ptserif, robotoblack, Arial, Helvetica, sans_serif;
-      margin-left: 79px;
-      margin-top: 8px;
-      height: 8px;
+    display: block;
+    text-align: center;
+    font: 14px/17px ptserif, robotoblack, Arial, Helvetica, sans_serif;
+    letter-spacing: .2px;
+    margin-left: 79px;
+    padding: 15px 17px 2px 4px;
+    height: 30px;
+    width: 190px;
         }
 
   .main {
-      padding: 15% 58% 100px 0;
-      background-position: right 222px bottom -3px;
-      background-size: 41.7%;
+    padding: 11% 58% 100px 0;
+    background-position: right 222px bottom 43px;
+    background-size: 41.7%;
     }
    
-         /*animation*/
+  /*animation*/
   .content__circle {
     width: 50%;
     height: 90%;
@@ -385,28 +351,24 @@
     z-index: 4;
     opacity: .3;
 
-    animation-name: circle;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+    animation: circle 5s ease-in-out alternate-reverse infinite;
+
   }
 
 
     @keyframes circle {
-    0% {
-      transform: translateX(-20px);
-    }
-    
-    50% {    
-    background-color: #f2e6ff;
-    }
+      0% {
+        transform: translateX(5%);
+      }
+      
+      50% {    
+      background-color: #f2e6ff;
+      }
 
-    100% {
-      transform: translateX(800px);
+      100% {
+        transform: translateX(80%);
+      }
     }
-    }   
-        
   }
 
 @media (max-width: 1024px) {
@@ -427,11 +389,12 @@
   }
 
   .menu {
-    right: 0.9%;
+    right: .9%;
   }
 
   .main__title {
-    margin: -30px 0 0px 0.66em;
+    margin-left: .66em;
+
   }
 
   .main__subtitle {
@@ -439,22 +402,19 @@
   }
 
   .main__button {
-    //position: absolute;
-    top: 68.1vh;
     margin-left: 41px;
-    padding-right: 30px;
-    font: 15.5px;
-    letter-spacing: 0.1px;
-    width: 162px;
+    font: 16px;
+    letter-spacing: .1px;
+    width: 188px;
   }
 
   .main {
     background-size: 51%;
-    padding: 15% 41% 102px 0px;
-    background-position: right 44px bottom 0vw;
+    padding: 12% 41% 102px 0;
+    background-position: right 44px bottom 6vh;
   }
 
-         /*animation*/
+  /*animation*/
   .content__circle {
     width: 70%;
     height: 95%;
@@ -466,17 +426,12 @@
     z-index: 4;
     opacity: .3;
 
-    animation-name: circle;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+    animation: circle 5s ease-in-out alternate-reverse infinite;
   }
 
-
-    @keyframes circle {
+ @keyframes circle {
     0% {
-      transform: translateX(-20px);
+      transform: translateX(5%);
     }
     
     50% {    
@@ -484,9 +439,9 @@
     }
 
     100% {
-      transform: translateX(900px);
+      transform: translateX(47%);
     }
-    }   
+  }  
 }
 
 @media (max-width: 768px) {
@@ -496,9 +451,9 @@
   }
 
   .logo__circle {
+    position: absolute;
     width: 28px;
     height: 28px;
-    position: absolute;
     left: 24px;
     top: 37px;
     transform: translateY(-50%);
@@ -520,7 +475,7 @@
   .main__title {
     margin: 9px 0 41px 18px;
     font: bold 47px/65px ptserif;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
   }
 
 
@@ -532,17 +487,17 @@
     top: 0;
   }
 
-  .menu-wrap{
+  .menu-wrap {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 2;
   }
 
-  .toggler{
+  .toggler {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: .5rem;
+    right: .5rem;
     width: 60px;
     height: 60px;
     z-index: 3;
@@ -550,10 +505,10 @@
     cursor: pointer;
   }
 
-  .hamburger{
+  .hamburger {
     position: absolute;
-    top: 0.6rem;
-    right: 0.5rem;
+    top: .6rem;
+    right: .5rem;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -623,7 +578,6 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      //transform: translateX(-150%) translateY(-50%);
       width: 1600px;
       height: 1600px;
       border-radius: 50%;
@@ -665,15 +619,10 @@
 
   }
 
-  /*.menu > div > div > ul > li > a:hover{
-    color: #fff44f;
-  }*/
-
   .toggler:checked ~ .menu{
     visibility: visible;
     position: absolute;
-    display: block; /* Make the links appear below each other */
-    //padding: 12px;
+    display: block; /* The links appear below each other */
   }
 
   .toggler:checked ~ .menu > div{
@@ -687,9 +636,9 @@
 
   .toggler:checked ~ .menu-item:last-child {
       white-space: nowrap;
-    }
+  }
 
-            /*animation*/
+  /*animation*/
   .content__circle {
     width: 80%;
     height: 80%;
@@ -701,27 +650,23 @@
     z-index: 4;
     opacity: .3;
 
-    animation-name: circle;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+    animation: circle 5s ease-in-out alternate-reverse infinite;
   }
 
 
     @keyframes circle {
-    0% {
-      transform: translateX(-20px);
-    }
-    
-    50% {    
-    background-color: #f2e6ff;
-    }
+      0% {
+        transform: translateX(5%);
+      }
+      
+      50% {    
+      background-color: #f2e6ff;
+      }
 
-    100% {
-      transform: translateX(800px);
+      100% {
+        transform: translateX(60%);
+      }
     }
-    }   
 
 }
 
@@ -739,10 +684,9 @@
 
   .main {
     background-size: 74.5vw;
-    background-position: top center;
-    margin-right: 41px;
+    background-position: left 38px top 0;
     height: 560px;
-    padding: 5px 0px 0px 39px;
+    padding: 5px 0 0 39px;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -755,12 +699,9 @@
   }
 
   .main__button {
-    margin: 0 0 0 40px;
-    width: 174px;
-    top: 6px;
-    padding-right: 24px;
-    padding-left: 11px;
-    letter-spacing: 0.5px
+    margin-left: 40px;
+    width: 188px;
+    padding-top: 12px;
   }
 
   .main__subtitle {
@@ -770,7 +711,7 @@
     margin-top: 30px;
     text-align: center;
     padding-right: 15px;
-    letter-spacing: 0.1px;
+    letter-spacing: .1px;
   }
 
   .toggler:checked ~ .menu > div > div{
@@ -780,7 +721,7 @@
   }
   .toggler:checked ~ .menu > div > div > ul {
     margin-bottom: 27px;
-
+    padding-right: 77px;
   }
 
   .menu > div > div > ul > li > a {
@@ -797,7 +738,7 @@
     display: none;
   }
 
- /*animation*/
+  /*animation*/
   .content__circle {
     width: 130%;
     height: 70%;
@@ -809,26 +750,22 @@
     z-index: 4;
     opacity: .3;
 
-    animation-name: circle;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+    animation: circle 5s ease-in-out alternate-reverse infinite;
   }
 
 
     @keyframes circle {
-    0% {
-      transform: translateX(-20px);
-    }
-    
-    50% {    
-    background-color: #f2e6ff;
-    }
+      0% {
+        transform: translateX(5%);
+      }
+      
+      50% {    
+      background-color: #f2e6ff;
+      }
 
-    100% {
-      transform: translateX(500px);
-    }
-    }   
+      100% {
+        transform: translateX(80%);
+      }
+    }  
 
 }
