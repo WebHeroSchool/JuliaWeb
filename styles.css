@@ -161,7 +161,6 @@
   }
 
   .logo__circle_color_blue {
-    //left: 4px;
     top: 54%;
     background: #C8DBFB;
     opacity: .7;
@@ -240,7 +239,6 @@
 
   
   .main-content__title {
-    //margin: 0 0 37px 0;
     font: bold 70px/85px ptserif;
     letter-spacing: 1.8px;
   }
@@ -253,7 +251,6 @@
 
   .main-content__button {
     padding: 18px 37px 22px 19px;
-    //padding-left: 22px;
     margin: 3px 0 2px 0;
     height: 11px;
     text-decoration: none;
@@ -375,10 +372,6 @@
   }
   .logo__circle_color_blue {
     left: 46px;
-  }
-
-  .p1 {
-    //left: 80px;
   }
 
   .menu {
@@ -792,7 +785,7 @@
 
   .menu > div > div > ul > li > a {
     font-size: 29px;
-    font: robotoblack, Arial, Helvetica, ptserif, sans_serif;
+    font: Arial, Helvetica, ptserif, sans_serif;
 }
 
   .menu > div > div {
@@ -830,7 +823,7 @@
       }
 
       100% {
-        transform: translateX(30  %);
+        transform: translateX(30%);
       }
     }  
 
